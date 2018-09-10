@@ -1,4 +1,4 @@
-# Proteomics-pipeline-to-convert-proteomics-raw-data-to-sequences-with-annotation
+# Peptides SpecTra Annotations (PaSTA)
 
 ## Prerequisite
 
