@@ -16,7 +16,7 @@ TBD
 ## Prerequisite
 
 - Java
-- [ms-gf](https://omics.pnl.gov/software/ms-gf) v2017.01.13
+- [ms-gf+](https://github.com/MSGFPlus/msgfplus/releases) v2018.07.17
 
 ## Installation
 
@@ -60,3 +60,9 @@ Docker stuff goes here...
 
 - Downstream analysis: http://meme-suite.org/
 - Run the whole pipeline in a Docker image
+
+## Resources
+
+- MS-GF+(https://htmlpreview.github.io/?https://github.com/MSGFPlus/msgfplus/blob/master/doc/index.html) : GitHub repo HTML help pages
+- Percolator(http://percolator.ms): Semi-supervised learning for peptide identification from shotgun proteomics datasets
+- Mimic(https://github.com/percolator/mimic): Mimic shuffles peptides in a manner that conserves homolog peptides. 
