@@ -2,6 +2,7 @@
 
 ## Prerequisite
 
+- Java
 - [ms-gf](https://omics.pnl.gov/software/ms-gf) v2017.01.13
 
 ## Presentation
