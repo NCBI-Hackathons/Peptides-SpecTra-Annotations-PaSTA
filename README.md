@@ -34,6 +34,17 @@ git clone https://github.com/NCBI-Hackathons/Peptides-SpecTra-Annotations-PaSTA
 cd Peptides-SpecTra-Annotations-PaSTA
 ```
 
+### Install Percolator & Mimic
+```
+wget https://github.com/percolator/percolator/releases/download/rel-3-02-01/ubuntu64.tar.gz`
+tar -xvzf ubuntu64.tar.gz
+sudo dpkg -i *.deb
+sudo apt-get install -f
+sudo apt install cmake
+git clone https://github.com/percolator/mimic.git
+cd src
+cmake -DCMAKE_INSTALL_PREFIX=/tmp/install . && make && make install
+```
 
 
 ## Presentations
