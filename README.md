@@ -13,13 +13,6 @@ NCI’s [Proteomic Data Commons](), to be analyzed.  This proposal is to create 
 ## Workflow
 ![Peptides SpecTra Annotations (PaSTA)](flow.png)
 
-
-## Docker Instructions
-
-A Docker image for the tools in the workflow is avialable here.  The image includes all the prerequisites and dependencies.  
-To run the Docker image - 
-
-
 ## Prerequisite
 
 - Java
@@ -27,7 +20,7 @@ To run the Docker image -
 
 ## Installation
 
-Docker stuff goes here...
+### Download the git repo
 
 ``` shell
 git clone https://github.com/NCBI-Hackathons/Peptides-SpecTra-Annotations-PaSTA
@@ -35,7 +28,8 @@ cd Peptides-SpecTra-Annotations-PaSTA
 ```
 
 ### Install Percolator & Mimic
-```
+
+``` shell
 wget https://github.com/percolator/percolator/releases/download/rel-3-02-01/ubuntu64.tar.gz`
 tar -xvzf ubuntu64.tar.gz
 sudo dpkg -i *.deb
@@ -46,6 +40,12 @@ cd src
 cmake -DCMAKE_INSTALL_PREFIX=/tmp/install . && make && make install
 ```
 
+## Docker Instructions
+
+A Docker image for the tools in the workflow is avialable here.  The image includes all the prerequisites and dependencies.  
+To run the Docker image - 
+
+Docker stuff goes here...
 
 ## Presentations
 
