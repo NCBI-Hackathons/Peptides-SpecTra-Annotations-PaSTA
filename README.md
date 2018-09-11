@@ -40,7 +40,7 @@ cd src
 cmake -DCMAKE_INSTALL_PREFIX=/tmp/install . && make && make install
 ```
 
-## Docker Instructions
+## Docker Instructions (under development)
 
 A Docker image for the tools in the workflow is avialable here.  The image includes all the prerequisites and dependencies.  
 To run the Docker image - 
@@ -50,7 +50,9 @@ Docker stuff goes here...
 ## Presentations
 
 - [Day 1](https://docs.google.com/presentation/d/147Zc5lRd3Z88NPPw3sXfVm7SiB_dCZIF6JZnVzG_pJU/edit?usp=sharing)
+- [Day 2](https://docs.google.com/presentation/d/1ND4Cnr6sN9k4f0hoWJ7APOw7Lo6x2yM-hDTkRCNlyWo/edit?usp=sharing)
 
 ## Future development
 
 - Downstream analysis: http://meme-suite.org/
+- Run the whole pipeline in a Docker image
