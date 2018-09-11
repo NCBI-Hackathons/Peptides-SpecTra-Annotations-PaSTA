@@ -8,7 +8,7 @@ NCI’s [Proteomic Data Commons](), to be analyzed.  This proposal is to create 
 
 ## Challenges in the field
 
-
+TBD
 
 ## Workflow
 ![Peptides SpecTra Annotations (PaSTA)](flow.png)
@@ -27,14 +27,18 @@ git clone https://github.com/NCBI-Hackathons/Peptides-SpecTra-Annotations-PaSTA
 cd Peptides-SpecTra-Annotations-PaSTA
 ```
 
-### Install Percolator & Mimic
-
+### Install Percolator
 ``` shell
 wget https://github.com/percolator/percolator/releases/download/rel-3-02-01/ubuntu64.tar.gz`
 tar -xvzf ubuntu64.tar.gz
 sudo dpkg -i *.deb
 sudo apt-get install -f
-sudo apt install cmake
+```
+
+### Installl Mimic
+
+``` shell
+sudo apt-get install cmake
 git clone https://github.com/percolator/mimic.git
 cd src
 cmake -DCMAKE_INSTALL_PREFIX=/tmp/install . && make && make install
