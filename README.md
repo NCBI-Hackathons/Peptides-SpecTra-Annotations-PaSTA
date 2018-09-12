@@ -68,6 +68,10 @@ rm -rf mimic-rel-1-00 rel-1-00.zip
 
 `bash examples/workflow_mimic_msgf_percolator.sh`
 
+Default Mods.txt can be found in: 
+`software/MSGFPlus/doc/examples`
+Instruction for adding custom modifications is also available in Mods.txt.
+
 ## Docker Instructions (under development)
 
 A Docker image for the tools in the workflow is avialable here.  The image includes all the prerequisites and dependencies.  
