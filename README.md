@@ -89,7 +89,7 @@ docker run -v `pwd`:`pwd` -w `pwd` -i -t stevetsa/proteomics:latest
 ```
 
 This mounts the current working directory to the same directory structure inside the container.  You will be able to access all files and folders downstream of the current working directory.  
-All the executibles are in ```{}/usr/bin```, ```{}/usr/local/bin```, MS-GF+ JAR file is ```/opt/MSGFPlusv2018.07.17.jar```
+All the executibles are in ```/usr/bin```, ```/usr/local/bin```, MS-GF+ JAR file is ```/opt/MSGFPlusv2018.07.17.jar```
 
 
 ## Presentations
