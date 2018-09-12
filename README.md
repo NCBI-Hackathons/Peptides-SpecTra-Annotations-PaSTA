@@ -66,9 +66,12 @@ rm -rf mimic-rel-1-00 rel-1-00.zip
 
 ## Run the whole pipeline
 
-`bash examples/workflow_mimic_msgf_percolator.sh`
+``` shell
+bash examples/workflow_mimic_msgf_percolator.sh
+bash examples/run_one_example.sh
+```
 
-Default Mods.txt can be found in: 
+Default Mods.txt can be found in:
 `software/MSGFPlus/doc/examples`
 Instruction for adding custom modifications is also available in Mods.txt.
 
