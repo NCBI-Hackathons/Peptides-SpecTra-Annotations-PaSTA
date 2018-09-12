@@ -33,7 +33,7 @@ fasta_target=$DIR/AUP000005640_sp.fasta
 fasta_file=`basename $fasta_target`
 
 #Create Decoy database with mimic
-$PARENT_DIR/bin/mimic $fasta_target> $fasta_path/Decoy_$fasta_file
+$PARENT_DIR/software/bin/mimic $fasta_target> $fasta_path/Decoy_$fasta_file
 fasta_decoy=$fasta_path/Decoy_$fasta_file
 
 modification=$DIR/Mods.txt
