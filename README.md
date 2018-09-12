@@ -79,17 +79,17 @@ in [Common Workflow Language](https://www.commonwl.org/user_guide/) Version 1.
 
 ![Schematic of the Workflow on the Seven Bridges Cancer Genomics Cloud](rabix_workflow.png) 
 
-## Docker Instructions (under development)
+## Docker Instructions
 
 A Docker image for the tools in the workflow is avialable here.  The image includes all the prerequisites and dependencies.  
 To run the Docker image -  
 
 ```{}
-docker run -v `pwd`:`pwd` -w `pwd` -i -t stevetsa/proteomics
+docker run -v `pwd`:`pwd` -w `pwd` -i -t stevetsa/proteomics:latest
 ```
 
 This mounts the current working directory to the same directory structure inside the container.  You will be able to access all files and folders downstream of the current working directory.  
-All the executibles are in /usr/bin, /usr/local/bin, MSGF JAR file is /opt/MSGFPlusv2018.07.17.jar
+All the executibles are in ```{}/usr/bin```, ```{}/usr/local/bin```, MS-GF+ JAR file is ```/opt/MSGFPlusv2018.07.17.jar```
 
 
 ## Presentations
