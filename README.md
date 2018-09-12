@@ -55,9 +55,12 @@ sudo apt-get install -f
 ### Installl Mimic
 
 ``` shell
-git clone https://github.com/percolator/mimic.git
-cd mimic
-cmake -DCMAKE_INSTALL_PREFIX=/tmp/install . && make && make install
+wget https://github.com/percolator/mimic/archive/rel-1-00.zi
+unzip rel-1-00.zip
+cd mimic-rel-1-00
+cmake -DCMAKE_INSTALL_PREFIX=$(pwd)/../software/ src/ && make && make install
+cd ..
+rm -rf mimic-rel-1-00 rel-1-00.zip
 ```
 
 ## Run the whole pipeline
