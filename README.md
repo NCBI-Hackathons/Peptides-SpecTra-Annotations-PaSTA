@@ -36,6 +36,7 @@ cd Peptides-SpecTra-Annotations-PaSTA
 wget https://github.com/MSGFPlus/msgfplus/releases/download/v2018.07.17/v2018.07.17.zip
 mkdir -p software/MSGFPlus
 unzip -d software/MSGFPlus v2018.07.17.zip
+rm v2018.07.17.zip
 ```
 
 ### Install Percolator
