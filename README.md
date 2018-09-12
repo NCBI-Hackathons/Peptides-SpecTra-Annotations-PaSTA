@@ -53,7 +53,7 @@ sudo dpkg -i *.deb
 sudo apt-get install -f
 ```
 
-### Installl Mimic
+### Install Mimic
 
 ``` shell
 wget https://github.com/percolator/mimic/archive/rel-1-00.zi
@@ -72,12 +72,25 @@ Default Mods.txt can be found in:
 `software/MSGFPlus/doc/examples`
 Instruction for adding custom modifications is also available in Mods.txt.
 
+## Workflow availability on the NCI Cloud Resources
+
+A proof-of-concept of this workflow has been created on the [Seven Bridges Cancer Genomics Cloud](www.cancergenomicscloud.org) using [Rabix Composer](https://github.com/rabix/composer)
+in [Common Workflow Language](https://www.commonwl.org/user_guide/) Version 1.  
+
+![Schematic of the Workflow on the Seven Bridges Cancer Genomics Cloud](rabix_workflow.png) 
+
 ## Docker Instructions (under development)
 
 A Docker image for the tools in the workflow is avialable here.  The image includes all the prerequisites and dependencies.  
-To run the Docker image -
+To run the Docker image -  
 
-Docker stuff goes here...
+```{}
+docker run -v `pwd`:`pwd` -w `pwd` -i -t stevetsa/proteomics
+```
+
+This mounts the current working directory to the same directory structure inside the container.  You will be able to access all files and folders downstream of the current working directory.  
+All the executibles are in /usr/bin, /usr/local/bin, MSGF JAR file is /opt/MSGFPlusv2018.07.17.jar
+
 
 ## Presentations
 
