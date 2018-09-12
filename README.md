@@ -55,12 +55,9 @@ sudo apt-get install -f
 ### Installl Mimic
 
 ``` shell
-wget https://github.com/percolator/mimic/archive/rel-1-00.zi
-unzip rel-1-00.zip
-cd mimic-rel-1-00
-cmake -DCMAKE_INSTALL_PREFIX=$(pwd)/../software/ src/ && make && make install
-cd ..
-rm -rf mimic-rel-1-00 rel-1-00.zip
+git clone https://github.com/percolator/mimic.git
+cd mimic
+cmake -DCMAKE_INSTALL_PREFIX=/tmp/install . && make && make install
 ```
 
 ## Run the whole pipeline
@@ -78,7 +75,7 @@ Docker stuff goes here...
 
 - [Day 1](https://docs.google.com/presentation/d/147Zc5lRd3Z88NPPw3sXfVm7SiB_dCZIF6JZnVzG_pJU/edit?usp=sharing)
 - [Day 2](https://docs.google.com/presentation/d/1ND4Cnr6sN9k4f0hoWJ7APOw7Lo6x2yM-hDTkRCNlyWo/edit?usp=sharing)
-
+- [Day 3](https://docs.google.com/presentation/d/1_Ez8ELyWS_XvVyM5FL-CefT7wx5r5uMR2zfgJkzF4sY/edit?usp=sharing)
 ## Resources
 
 - Information of dastset used in the example [https://cptac-data-portal.georgetown.edu/cptac/s/S022](https://cptac-data-portal.georgetown.edu/cptac/s/S022).
