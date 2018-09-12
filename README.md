@@ -78,6 +78,7 @@ Docker stuff goes here...
 
 ## Resources
 
+- Information of dastset used in the example [https://cptac-data-portal.georgetown.edu/cptac/s/S022](https://cptac-data-portal.georgetown.edu/cptac/s/S022).
 - [MS-GF+](https://htmlpreview.github.io/?https://github.com/MSGFPlus/msgfplus/blob/master/doc/index.html): GitHub repo HTML help pages
 - [Percolator](http://percolator.ms): Semi-supervised learning for peptide identification from shotgun proteomics datasets.
 - [Mimic](https://github.com/percolator/mimic): Mimic shuffles peptides in a manner that conserves homolog peptides. 
