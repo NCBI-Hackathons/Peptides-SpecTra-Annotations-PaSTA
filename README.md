@@ -60,6 +60,10 @@ cd src
 cmake -DCMAKE_INSTALL_PREFIX=/tmp/install . && make && make install
 ```
 
+## Run the whole pipeline
+
+`bash examples/workflow_mimic_msgf_percolator.sh`
+
 ## Docker Instructions (under development)
 
 A Docker image for the tools in the workflow is avialable here.  The image includes all the prerequisites and dependencies.  

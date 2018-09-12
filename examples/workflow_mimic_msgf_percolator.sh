@@ -1,8 +1,10 @@
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
+PARENT_DIR="$(dirname "$DIR")"
 
-msgf=~/kavee/MSGFPlus.v2018.07.17/MSGFPlus.jar
-mzml=~/data/TCGA_CC/TCGA-A6-3807
-fasta_path=~/kavee/test/database
-fasta_target=~/kavee/test/database/AUP000005640_sp.fasta
+msgf=$PARENT_DIR/software/MSGFPlus/MSGFPlus.jar
+mzml=$PARENT_DIR/cptc-xfer.uis.georgetown.edu/publicData/Phase_II_Data/TCGA_Colorectal_Cancer_S_022/TCGA-A6-3807-01A-22_Proteome_VU_20121019/TCGA-A6-3807-01A-22_Proteome_VU_20121019_mzML
+fasta_path=$DIR
+fasta_target=$DIR/AUP000005640_sp.fasta
 fasta_file=`basename $fasta_target`
 
 #Create Decoy database with mimic
@@ -11,8 +13,9 @@ fasta_decoy=$fasta_path/Decoy_$fasta_file
 
 modification=~/data/TCGA_CC/Mods.txt
 cd $mzml
-mkdir target
-mkdir decoy
+
+mkdir $mzml/target
+mkdir $mzml/decoy
 
 #BuildSA
 java -Xmx4000M -cp $msgf edu.ucsd.msjava.msdbsearch.BuildSA -d $fasta_target -tda 0
@@ -51,5 +54,14 @@ for file in *.mzML; do
 		-minLength 7
 done
 
-#msgf2pin 
-#msgf2pin -F $fasta_target,$fasta_decoy --min-length 7 
+for i in 0{1..9} {10..10}; do
+    msgf2pin -F $fasta_target,$fasta_path/Decoy_AUP000005640_sp.fasta --min-length 7 -o $fasta_path/pin$i.tsv $mzml/target/TCGA-A6-3807-01A-22_W_VU_20121019_A0218_4I_R_FR$i.mzML.mzid $mzml/decoy/TCGA-A6-3807-01A-22_W_VU_20121019_A0218_4I_R_FR$i.mzML.mzid
+done
+
+for i in {11..15}; do
+    msgf2pin -F $fasta_target,$fasta_path/Decoy_AUP000005640_sp.fasta --min-length 7 -o $fasta_path/pin$i.tsv $mzml/target/TCGA-A6-3807-01A-22_W_VU_20121020_A0218_4I_R_FR$i.mzML.mzid $mzml/decoy/TCGA-A6-3807-01A-22_W_VU_20121020_A0218_4I_R_FR$i.mzML.mzid
+done
+
+for i in 0{1..9} {10..15}; do
+    percolator $fasta_path/pin$i.tsv -f $fasta_target > $fasta_path/pout$i.tsv
+done
