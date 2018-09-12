@@ -16,7 +16,6 @@ TBD
 ## Prerequisite
 
 - Java
-- [ms-gf+](https://github.com/MSGFPlus/msgfplus/releases) v2018.07.17
 
 ## Installation
 
@@ -27,7 +26,20 @@ git clone https://github.com/NCBI-Hackathons/Peptides-SpecTra-Annotations-PaSTA
 cd Peptides-SpecTra-Annotations-PaSTA
 ```
 
+### Download the dataset used
+
+`wget --recursive --no-parent --reject="index.html*" -e robots=off https://cptc-xfer.uis.georgetown.edu/publicData/Phase_II_Data/TCGA_Colorectal_Cancer_S_022/TCGA-A6-3807-01A-22_Proteome_VU_20121019/TCGA-A6-3807-01A-22_Proteome_VU_20121019_mzML/`
+
+### Install MSGFPlus
+
+```
+wget https://github.com/MSGFPlus/msgfplus/releases/download/v2018.07.17/v2018.07.17.zip
+mkdir -p software/MSGFPlus
+unzip -d software/MSGFPlus v2018.07.17.zip
+```
+
 ### Install Percolator
+
 ``` shell
 wget https://github.com/percolator/percolator/releases/download/rel-3-02-01/ubuntu64.tar.gz`
 tar -xvzf ubuntu64.tar.gz
