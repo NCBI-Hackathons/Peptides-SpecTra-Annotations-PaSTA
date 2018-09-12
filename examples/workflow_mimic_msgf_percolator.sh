@@ -1,3 +1,28 @@
+#--------------------------------------------------------------------------------------------------------------------------------
+#
+# Purpose: Given spectra input data files, and a reference datatabase (amino acids in a fasta sequence formated file)
+#          Execute the MSGF+ program on all mzML files found in the input spectra directory
+#
+# Input:   $modsfile <- this contains the post-translational modifications used to expand the possibile matches to database files
+#          $file     <- the specific mzML spectra file
+#          $database <- the reference amino acid sequence file in fasta format
+#
+# Output:  $filemzid <- the identified amino acid sequences that match the input spectra file to the reference database
+#
+# Assumptions:  The $database file has previously had it's suffix array made for it to facilitate searching by the MSGF+ program
+#
+# Algorithm steps:
+#        cd to the $inputsubdir
+#        for each file in $subdir matching with ending *.mzML do the following
+#          run the program MSGF+
+#          with the provided configuration parameters, especially those put in the Mods.txt file
+#          output the file in a *.mzid file format.
+#
+#
+# Next steps after:
+#   Run the conversion of this file to tsv file format
+#
+#--------------------------------------------------------------------------------------------------------------------------------
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
 PARENT_DIR="$(dirname "$DIR")"
 

@@ -1,16 +1,17 @@
 # Peptides SpecTra Annotations (PaSTA)
 
 ## Background
+
 Unlike the genomics field, currently most tools/workflows for analyzing proteomics data are either tied to a specific platform, such as Galaxy, or an operating system (OS), such as Microsoft 
 Windows or Linux.  This lack of publicly available, non-platform/OS-dependent and reusable proteomics tools and workflows is preventing valuable public proteomic datasets, such as those in 
 NCI’s Proteomic Data Commons, to be analyzed.  This proposal is to create an analysis workflow to generate annotated peptide sequence from proteomic spectra using containerized tools.
-
 
 ## Challenges in the field
 
 TBD
 
 ## Workflow
+
 ![Peptides SpecTra Annotations (PaSTA)](flow.png)
 
 ## Prerequisite
@@ -70,7 +71,7 @@ rm -rf mimic-rel-1-00 rel-1-00.zip
 ## Docker Instructions (under development)
 
 A Docker image for the tools in the workflow is avialable here.  The image includes all the prerequisites and dependencies.  
-To run the Docker image - 
+To run the Docker image -
 
 Docker stuff goes here...
 
@@ -79,6 +80,7 @@ Docker stuff goes here...
 - [Day 1](https://docs.google.com/presentation/d/147Zc5lRd3Z88NPPw3sXfVm7SiB_dCZIF6JZnVzG_pJU/edit?usp=sharing)
 - [Day 2](https://docs.google.com/presentation/d/1ND4Cnr6sN9k4f0hoWJ7APOw7Lo6x2yM-hDTkRCNlyWo/edit?usp=sharing)
 - [Day 3](https://docs.google.com/presentation/d/1_Ez8ELyWS_XvVyM5FL-CefT7wx5r5uMR2zfgJkzF4sY/edit?usp=sharing)
+
 ## Resources
 
 - Information of dastset used in the example [https://cptac-data-portal.georgetown.edu/cptac/s/S022](https://cptac-data-portal.georgetown.edu/cptac/s/S022).
@@ -88,5 +90,5 @@ Docker stuff goes here...
 
 ## Future development
 
-- Downstream analysis: http://meme-suite.org/
+- Downstream analysis: like [meme-suite](http://meme-suite.org/)
 - Run the whole pipeline in a Docker image
