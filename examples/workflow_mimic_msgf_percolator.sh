@@ -36,7 +36,7 @@ fasta_file=`basename $fasta_target`
 $PARENT_DIR/bin/mimic $fasta_target> $fasta_path/Decoy_$fasta_file
 fasta_decoy=$fasta_path/Decoy_$fasta_file
 
-modification=~/data/TCGA_CC/Mods.txt
+modification=$DIR/Mods.txt
 cd $mzml
 
 mkdir $mzml/target
