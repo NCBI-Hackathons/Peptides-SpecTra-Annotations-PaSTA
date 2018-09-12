@@ -56,13 +56,13 @@ Docker stuff goes here...
 - [Day 1](https://docs.google.com/presentation/d/147Zc5lRd3Z88NPPw3sXfVm7SiB_dCZIF6JZnVzG_pJU/edit?usp=sharing)
 - [Day 2](https://docs.google.com/presentation/d/1ND4Cnr6sN9k4f0hoWJ7APOw7Lo6x2yM-hDTkRCNlyWo/edit?usp=sharing)
 
+## Resources
+
+- [MS-GF+](https://htmlpreview.github.io/?https://github.com/MSGFPlus/msgfplus/blob/master/doc/index.html): GitHub repo HTML help pages
+- [Percolator](http://percolator.ms): Semi-supervised learning for peptide identification from shotgun proteomics datasets.
+- [Mimic](https://github.com/percolator/mimic): Mimic shuffles peptides in a manner that conserves homolog peptides. 
+
 ## Future development
 
 - Downstream analysis: http://meme-suite.org/
 - Run the whole pipeline in a Docker image
-
-## Resources
-
-- MS-GF+(https://htmlpreview.github.io/?https://github.com/MSGFPlus/msgfplus/blob/master/doc/index.html) : GitHub repo HTML help pages
-- Percolator(http://percolator.ms): Semi-supervised learning for peptide identification from shotgun proteomics datasets
-- Mimic(https://github.com/percolator/mimic): Mimic shuffles peptides in a manner that conserves homolog peptides. 
