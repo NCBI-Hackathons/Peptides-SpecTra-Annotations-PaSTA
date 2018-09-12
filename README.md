@@ -16,6 +16,7 @@ TBD
 ## Prerequisite
 
 - Java
+- Cmake
 
 ## Installation
 
@@ -54,9 +55,8 @@ sudo apt-get install -f
 ### Installl Mimic
 
 ``` shell
-sudo apt-get install cmake
 git clone https://github.com/percolator/mimic.git
-cd src
+cd mimic
 cmake -DCMAKE_INSTALL_PREFIX=/tmp/install . && make && make install
 ```
 
