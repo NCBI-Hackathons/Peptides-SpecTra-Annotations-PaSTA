@@ -74,8 +74,8 @@ Instruction for adding custom modifications is also available in Mods.txt.
 
 ## Workflow availability on the NCI Cloud Resources
 
-A proof-of-concept of this workflow has been created on the [Seven Bridges Cancer Genomics Cloud](www.cancergenomicscloud.org) using [Rabix Composer](https://github.com/rabix/composer)
-in [Common Workflow Language](https://www.commonwl.org/user_guide/) Version 1.  
+A proof-of-concept of this workflow has been created on the [Seven Bridges Cancer Genomics Cloud](http://www.cancergenomicscloud.org) using [Rabix Composer](https://github.com/rabix/composer)
+in [Common Workflow Language](https://www.commonwl.org/) Version 1.  
 
 ![Schematic of the Workflow on the Seven Bridges Cancer Genomics Cloud](rabix_workflow.png) 
 
