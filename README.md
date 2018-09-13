@@ -47,10 +47,12 @@ rm v2018.07.17.zip
 ### Install Percolator
 
 ``` shell
-wget https://github.com/percolator/percolator/releases/download/rel-3-02-01/ubuntu64.tar.gz`
-tar -xvzf ubuntu64.tar.gz
-sudo dpkg -i *.deb
-sudo apt-get install -f
+wget https://github.com/percolator/percolator/archive/rel-3-02-01.tar.gz
+tar xvzf rel-3-02-01.tar.gz
+cd percolator-rel-3-02-01
+cmake -DCMAKE_INSTALL_PREFIX=$(pwd)/../software/ . && make && make install
+cd ..
+rm -rf percolator-rel-3-02-01 rel-3-02-01.tar.gz
 ```
 
 ### Install Mimic
