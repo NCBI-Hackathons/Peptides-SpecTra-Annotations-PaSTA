@@ -17,7 +17,7 @@ TBD
 ## Prerequisite
 
 - Java
-- Cmake
+- [CMake](https://cmake.org/)
 
 ## Installation
 
