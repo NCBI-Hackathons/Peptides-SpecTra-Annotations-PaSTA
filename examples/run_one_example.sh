@@ -55,4 +55,4 @@ java -Xmx24000M -jar $msgf \
 
 
 msgf2pin -F $fasta_target,$fasta_path/Decoy_AUP000005640_sp.fasta --min-length 7 -o $fasta_path/pin.tsv $mzml_folder/target/$filename.mzid $mzml_folder/decoy/$filename.mzid
-percolator $fasta_path/pin.tsv -f $fasta_target > $fasta_path/pout.tsv
+$PARENT_DIR/software/bin/percolator $fasta_path/pin.tsv -f $fasta_target > $fasta_path/pout.tsv
