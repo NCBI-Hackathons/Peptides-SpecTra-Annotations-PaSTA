@@ -34,6 +34,12 @@ cd Peptides-SpecTra-Annotations-PaSTA
 wget --recursive --no-parent --reject="index.html*" -e robots=off https://cptc-xfer.uis.georgetown.edu/publicData/Phase_II_Data/TCGA_Colorectal_Cancer_S_022/TCGA-A6-3807-01A-22_Proteome_VU_20121019/TCGA-A6-3807-01A-22_Proteome_VU_20121019_mzML/
 gzip -d cptc-xfer.uis.georgetown.edu/publicData/Phase_II_Data/TCGA_Colorectal_Cancer_S_022/TCGA-A6-3807-01A-22_Proteome_VU_20121019/TCGA-A6-3807-01A-22_Proteome_VU_20121019_mzML/TCGA-A6-3807-01A-22_W_VU_201210*.mzML.gz
 ```
+### Download Human reference proteome database from UniProt
+
+``` shell
+wget -O AUP000005640_sp.fasta "https://www.uniprot.org/uniprot/?query=reviewed:yes+AND+proteome:UP000005640&format=fasta"
+```
+
 
 ### Install MSGFPlus
 
