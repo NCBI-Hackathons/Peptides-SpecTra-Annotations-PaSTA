@@ -53,7 +53,7 @@ rm v2018.07.17.zip
 ### Install Percolator
 
 ``` shell
-wget https://github.com/percolator/percolator/releases/download/rel-3-02-01/ubuntu64.tar.gz`
+wget https://github.com/percolator/percolator/releases/download/rel-3-02-01/ubuntu64.tar.gz
 tar -xvzf ubuntu64.tar.gz
 sudo dpkg -i *.deb
 sudo apt-get install -f
