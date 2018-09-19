@@ -62,7 +62,7 @@ sudo apt-get install -f
 ### Install Mimic
 
 ``` shell
-wget https://github.com/percolator/mimic/archive/rel-1-00.zi
+wget https://github.com/percolator/mimic/archive/rel-1-00.zip
 unzip rel-1-00.zip
 cd mimic-rel-1-00
 cmake -DCMAKE_INSTALL_PREFIX=$(pwd)/../software/ src/ && make && make install
